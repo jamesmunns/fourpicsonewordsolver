@@ -40,7 +40,7 @@ def main():
         sortable_matches = []
         unsortable_matches = []
 
-        letters, length = raw_input( "Letters to decode:\n>" ).split( ' ' )
+        letters, length = raw_input( "Letters to decode ( format 'word, length of solution' ):\n>" ).split( ' ' )
         for word in worddict:
             if( is_match( word, letters, length ) ):
                 if word in freqlist:
